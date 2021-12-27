@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		FA43FFE62771C4F00067B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFE52771C4F00067B0D0 /* AppDelegate.swift */; };
 		FA43FFE82771C4F00067B0D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFE72771C4F00067B0D0 /* SceneDelegate.swift */; };
-		FA43FFEA2771C4F00067B0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFE92771C4F00067B0D0 /* ViewController.swift */; };
+		FA43FFEA2771C4F00067B0D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFE92771C4F00067B0D0 /* HomeViewController.swift */; };
 		FA43FFED2771C4F00067B0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43FFEB2771C4F00067B0D0 /* Main.storyboard */; };
-		FA43FFF02771C4F00067B0D0 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFEE2771C4F00067B0D0 /* CoreDataPractice.xcdatamodeld */; };
+		FA43FFF02771C4F00067B0D0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA43FFEE2771C4F00067B0D0 /* DataModel.xcdatamodeld */; };
 		FA43FFF22771C4F20067B0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA43FFF12771C4F20067B0D0 /* Assets.xcassets */; };
 		FA43FFF52771C4F20067B0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43FFF32771C4F20067B0D0 /* LaunchScreen.storyboard */; };
+		FAA38A04277439DD006CA8E7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A00277439DD006CA8E7 /* Article.swift */; };
+		FAA38A06277439DD006CA8E7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A02277439DD006CA8E7 /* Category.swift */; };
+		FAA38A0B277441B1006CA8E7 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */; };
+		FAA38A0D277449EF006CA8E7 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A0C277449EF006CA8E7 /* PersistentContainer.swift */; };
+		FAA38A1327745B9C006CA8E7 /* Extension+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A1227745B9C006CA8E7 /* Extension+NSManagedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA43FFE22771C4F00067B0D0 /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA43FFE52771C4F00067B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA43FFE72771C4F00067B0D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA43FFE92771C4F00067B0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA43FFE92771C4F00067B0D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA43FFEC2771C4F00067B0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA43FFEF2771C4F00067B0D0 /* CoreDataPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractice.xcdatamodel; sourceTree = "<group>"; };
 		FA43FFF12771C4F20067B0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA43FFF42771C4F20067B0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA43FFF62771C4F20067B0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA38A00277439DD006CA8E7 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FAA38A02277439DD006CA8E7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		FAA38A0C277449EF006CA8E7 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		FAA38A1227745B9C006CA8E7 /* Extension+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSManagedObject.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,53 @@
 		FA43FFE42771C4F00067B0D0 /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
-				FA43FFE52771C4F00067B0D0 /* AppDelegate.swift */,
-				FA43FFE72771C4F00067B0D0 /* SceneDelegate.swift */,
-				FA43FFE92771C4F00067B0D0 /* ViewController.swift */,
-				FA43FFEB2771C4F00067B0D0 /* Main.storyboard */,
+				FAA38A0827743C81006CA8E7 /* Application */,
+				FAA389EE27743511006CA8E7 /* CoreData */,
+				FAA38A0927743C8F006CA8E7 /* Scene */,
 				FA43FFF12771C4F20067B0D0 /* Assets.xcassets */,
 				FA43FFF32771C4F20067B0D0 /* LaunchScreen.storyboard */,
 				FA43FFF62771C4F20067B0D0 /* Info.plist */,
-				FA43FFEE2771C4F00067B0D0 /* CoreDataPractice.xcdatamodeld */,
 			);
 			path = CoreDataPractice;
+			sourceTree = "<group>";
+		};
+		FAA389EE27743511006CA8E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FFEE2771C4F00067B0D0 /* DataModel.xcdatamodeld */,
+				FAA389EF2774351B006CA8E7 /* Models */,
+				FAA38A0C277449EF006CA8E7 /* PersistentContainer.swift */,
+				FAA38A1227745B9C006CA8E7 /* Extension+NSManagedObject.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FAA389EF2774351B006CA8E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA38A00277439DD006CA8E7 /* Article.swift */,
+				FAA38A02277439DD006CA8E7 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA38A0827743C81006CA8E7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FFE52771C4F00067B0D0 /* AppDelegate.swift */,
+				FA43FFE72771C4F00067B0D0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FAA38A0927743C8F006CA8E7 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FFEB2771C4F00067B0D0 /* Main.storyboard */,
+				FA43FFE92771C4F00067B0D0 /* HomeViewController.swift */,
+				FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA43FFEA2771C4F00067B0D0 /* ViewController.swift in Sources */,
+				FAA38A0D277449EF006CA8E7 /* PersistentContainer.swift in Sources */,
+				FA43FFEA2771C4F00067B0D0 /* HomeViewController.swift in Sources */,
+				FAA38A1327745B9C006CA8E7 /* Extension+NSManagedObject.swift in Sources */,
 				FA43FFE62771C4F00067B0D0 /* AppDelegate.swift in Sources */,
+				FAA38A06277439DD006CA8E7 /* Category.swift in Sources */,
+				FAA38A04277439DD006CA8E7 /* Article.swift in Sources */,
 				FA43FFE82771C4F00067B0D0 /* SceneDelegate.swift in Sources */,
-				FA43FFF02771C4F00067B0D0 /* CoreDataPractice.xcdatamodeld in Sources */,
+				FA43FFF02771C4F00067B0D0 /* DataModel.xcdatamodeld in Sources */,
+				FAA38A0B277441B1006CA8E7 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,13 +416,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FA43FFEE2771C4F00067B0D0 /* CoreDataPractice.xcdatamodeld */ = {
+		FA43FFEE2771C4F00067B0D0 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FA43FFEF2771C4F00067B0D0 /* CoreDataPractice.xcdatamodel */,
 			);
 			currentVersion = FA43FFEF2771C4F00067B0D0 /* CoreDataPractice.xcdatamodel */;
-			path = CoreDataPractice.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
