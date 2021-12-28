@@ -19,6 +19,8 @@
 		FAA38A0B277441B1006CA8E7 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */; };
 		FAA38A0D277449EF006CA8E7 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A0C277449EF006CA8E7 /* PersistentContainer.swift */; };
 		FAA38A1327745B9C006CA8E7 /* Extension+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA38A1227745B9C006CA8E7 /* Extension+NSManagedObject.swift */; };
+		FAFE59FC277AF273001A5B6A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE59FB277AF273001A5B6A /* DetailViewController.swift */; };
+		FAFE59FE277AF9DA001A5B6A /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE59FD277AF9DA001A5B6A /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		FAA38A0C277449EF006CA8E7 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		FAA38A1227745B9C006CA8E7 /* Extension+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSManagedObject.swift"; sourceTree = "<group>"; };
+		FAFE59FB277AF273001A5B6A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAFE59FD277AF9DA001A5B6A /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				FA43FFEB2771C4F00067B0D0 /* Main.storyboard */,
 				FA43FFE92771C4F00067B0D0 /* HomeViewController.swift */,
 				FAA38A0A277441B1006CA8E7 /* CreationViewController.swift */,
+				FAFE59FB277AF273001A5B6A /* DetailViewController.swift */,
+				FAFE59FD277AF9DA001A5B6A /* ArticleCell.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 				FAA38A06277439DD006CA8E7 /* Category.swift in Sources */,
 				FAA38A04277439DD006CA8E7 /* Article.swift in Sources */,
 				FA43FFE82771C4F00067B0D0 /* SceneDelegate.swift in Sources */,
+				FAFE59FC277AF273001A5B6A /* DetailViewController.swift in Sources */,
 				FA43FFF02771C4F00067B0D0 /* DataModel.xcdatamodeld in Sources */,
 				FAA38A0B277441B1006CA8E7 /* CreationViewController.swift in Sources */,
+				FAFE59FE277AF9DA001A5B6A /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

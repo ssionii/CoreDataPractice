@@ -13,11 +13,16 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private lazy var dataSource = UITableViewDiffableDataSource<Int, NSManagedObjectID>(tableView: tableView) { tableView, indexPath, articleObjectID in
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath)
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as? ArticleCell else {
+            return UITableViewCell()
+        }
+
         guard let article = try? PersistentContainer.shared.viewContext.existingObject(with: articleObjectID) as? Article else { return cell }
-        cell.textLabel?.text = article.category?.name
-        cell.detailTextLabel?.text = article.name
+        cell.configure(
+            category: article.category?.name,
+            title: article.name,
+            viewCount: String(article.viewCount)
+        )
         return cell
     }
     
@@ -34,14 +39,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        getObjectByNSFetchRequest()
-        
+
         articlesFetchedResultsController.delegate = self
         
         fetchArticles()
         
         tableView.dataSource = dataSource
+        tableView.delegate = self
     }
     
     private func fetchArticles() {
@@ -51,36 +55,6 @@ class HomeViewController: UIViewController {
             print("Articles fetch error \(error)")
         }
     }
-    
-    // MARK: - 예제
-    private func getObjectByObjectID() {
-        // object ID 가져오기
-        let category = Category(context: PersistentContainer.shared.viewContext)
-        let categoryObjectID = category.objectID
-        
-        // NSManagedObjectContext에서 ID로 object 가져오기
-        do {
-            let object = try PersistentContainer.shared.viewContext.existingObject(with: categoryObjectID)
-            print("object : \(object)")
-        } catch {
-            print("exisitngObject error \(error.localizedDescription)")
-        }
-    }
-    
-    private func getObjectByNSFetchRequest() {
-        // 최대 1개의 결과를 가져오도록 request 설정
-        let fetchRequest = Category.fetchRequest()
-        fetchRequest.fetchLimit = 1
-        
-        // NSManagedObjectContext에서 fetchRequest로 object 가져오기
-        do {
-            let object = try PersistentContainer.shared.viewContext.fetch(fetchRequest)
-            print("object: \(object)")
-        } catch {
-            print("fetch error \(error.localizedDescription)")
-        }
-    }
-    
 }
 
 extension HomeViewController: NSFetchedResultsControllerDelegate {
@@ -89,5 +63,14 @@ extension HomeViewController: NSFetchedResultsControllerDelegate {
         didChangeContentWith snapshot: NSDiffableDataSourceSnapshotReference
     ) {
         dataSource.apply(snapshot as NSDiffableDataSourceSnapshot<Int, NSManagedObjectID>, animatingDifferences: true)
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        detailVC.article = articlesFetchedResultsController.object(at: indexPath)
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

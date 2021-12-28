@@ -15,8 +15,6 @@ final class Article: NSManagedObject, Identifiable {
     @NSManaged public var name: String?
     @NSManaged public var viewCount: Int64
     @NSManaged public var category: Category?
-    
-    // MARK: Transformables
     @NSManaged public var categoryName: String?
 }
 
